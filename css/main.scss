@@ -1,0 +1,105 @@
+@import "./partials/reset";
+@import "./partials/variables";
+
+body {
+  background-color: $bgDark;
+  height: 100vh;
+  width: 100vw;
+  @include flexAlign(center, center, row);
+
+  main.container {
+    width: 340px;
+    height: auto;
+    font-family: $fontFamily;
+
+    .profile-image {
+      background-image: url("https://media.licdn.com/dms/image/C4D03AQGzWRAO4WftGQ/profile-displayphoto-shrink_800_800/0/1552131205848?e=2147483647&v=beta&t=Al4KsJL4B-XfcN4bt-xaycfDlCYIelq7uoW08sl-vb8");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 280px;
+      border-radius: $borderRadius $borderRadius 0 0;
+    }
+
+    .business-info {
+      text-align: center;
+      background-color: $bgBusinessInfo;
+      color: $textWhite;
+      padding: 1.5rem;
+
+      h4 {
+        color: $textGold;
+        font-size: 0.7rem;
+      }
+
+      p {
+        font-size: 0.6rem;
+        padding: 0.6rem;
+      }
+
+      .buttons {
+        @include flexAlign(center, center, row);
+        gap: 15px;
+        margin: 0.5rem auto;
+      }
+
+      .buttons .btn {
+        @extend %btn;
+        @include flexAlign(center, center, row);
+
+        &:last-child {
+          background-color: $bglinkedIn;
+          a {
+            color: $textWhite;
+          }
+        }
+
+        &:last-child:hover {
+          background-color: $bgWhite;
+          a {
+            color: $bglinkedIn;
+          }
+        }
+
+        i {
+          margin-right: 8px;
+        }
+      }
+
+      .about,
+      .interests {
+        padding: 1.5rem 1.5rem 0 1.5rem;
+        h3 {
+          text-align: left;
+          text-transform: capitalize;
+        }
+
+        p {
+          text-align: left;
+          padding: 0;
+        }
+      }
+    }
+
+    footer {
+      background-color: $bgFooterColor;
+      @include flexAlign(center, center, row);
+      height: 4rem;
+      border-radius: 0 0 $borderRadius $borderRadius;
+
+      ul {
+        @include flexAlign(center, center, row);
+        gap: 1rem;
+        font-size: 2rem;
+        list-style-type: none;
+
+        li {
+          a {
+            color: $bgSocialMediaIcon;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+/* background color */
+$bgDark: #23242d;
+$bgWhite: #fff;
+$bgBusinessInfo: #1a1b20;
+$bglinkedIn: #5093e2;
+$bgFooterColor: #161618;
+$bgSocialMediaIcon: #908e9c;
+
+/* text color*/
+$textWhite: #feffff;
+$textGold: #d9c6b8;
+
+/* radius */
+$borderRadius: 5px;
+
+/* font family*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+$fontFamily: "Poppins", sans-serif;
+
+/* mixin */
+@mixin flexAlign($justifyContent, $alignItems, $direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+/* extend */
+%btn {
+  padding: 8px 12px;
+  width: 120px;
+  border-radius: $borderRadius;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  transition: all 0.7s;
+}

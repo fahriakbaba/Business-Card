@@ -1,0 +1,130 @@
+/* reset CSS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* background color */
+/* text color*/
+/* radius */
+/* font family*/
+/* mixin */
+/* extend */
+body main.container .business-info .buttons .btn {
+  padding: 8px 12px;
+  width: 120px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  transition: all 0.7s;
+}
+
+body {
+  background-color: #23242d;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body main.container {
+  width: 340px;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+}
+body main.container .profile-image {
+  background-image: url("https://media.licdn.com/dms/image/C4D03AQGzWRAO4WftGQ/profile-displayphoto-shrink_800_800/0/1552131205848?e=2147483647&v=beta&t=Al4KsJL4B-XfcN4bt-xaycfDlCYIelq7uoW08sl-vb8");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 280px;
+  border-radius: 5px 5px 0 0;
+}
+body main.container .business-info {
+  text-align: center;
+  background-color: #1a1b20;
+  color: #feffff;
+  padding: 1.5rem;
+}
+body main.container .business-info h4 {
+  color: #d9c6b8;
+  font-size: 0.7rem;
+}
+body main.container .business-info p {
+  font-size: 0.6rem;
+  padding: 0.6rem;
+}
+body main.container .business-info .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 0.5rem auto;
+}
+body main.container .business-info .buttons .btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body main.container .business-info .buttons .btn:last-child {
+  background-color: #5093e2;
+}
+body main.container .business-info .buttons .btn:last-child a {
+  color: #feffff;
+}
+body main.container .business-info .buttons .btn:last-child:hover {
+  background-color: #fff;
+}
+body main.container .business-info .buttons .btn:last-child:hover a {
+  color: #5093e2;
+}
+body main.container .business-info .buttons .btn i {
+  margin-right: 8px;
+}
+body main.container .business-info .about,
+body main.container .business-info .interests {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+body main.container .business-info .about h3,
+body main.container .business-info .interests h3 {
+  text-align: left;
+  text-transform: capitalize;
+}
+body main.container .business-info .about p,
+body main.container .business-info .interests p {
+  text-align: left;
+  padding: 0;
+}
+body main.container footer {
+  background-color: #161618;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  border-radius: 0 0 5px 5px;
+}
+body main.container footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  list-style-type: none;
+}
+body main.container footer ul li a {
+  color: #908e9c;
+}/*# sourceMappingURL=main.css.map */
