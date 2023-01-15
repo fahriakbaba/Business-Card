@@ -127,4 +127,7 @@ body main.container footer ul {
 }
 body main.container footer ul li a {
   color: #908e9c;
+}
+body main.container footer ul li a:hover {
+  opacity: 0.7;
 }/*# sourceMappingURL=main.css.map */
